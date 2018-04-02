@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y94">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3">
+            <ImageView
+                android:id="@+id/return_btn"
+                android:layout_gravity="start"
+                android:scaleType="fitStart"
+                android:paddingTop="@dimen/y30"
+                android:paddingLeft="@dimen/x32"
+                android:paddingBottom="@dimen/y30"
+                android:src="@mipmap/backimg"
+                android:layout_width="@dimen/x150"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_weight="1"
+            android:textColor="@color/gray_333333"
+            android:gravity="center"
+            android:textSize="@dimen/x36"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_weight="1.3"
+            android:gravity="right|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/blue_save_btn"
+                android:layout_width="@dimen/x104"
+                android:layout_marginRight="@dimen/x32"
+                android:textColor="@color/white"
+                android:text="保存"
+                android:gravity="center"
+                android:textSize="@dimen/x24"
+                android:background="@color/color_2ea1fb"
+                android:layout_height="@dimen/y46"/>
+            <TextView
+                android:id="@+id/right_tv_btn"
+                android:textSize="@dimen/x34"
+                android:textColor="@color/gray_333333"
+                android:gravity="center"
+                android:visibility="gone"
+                android:paddingRight="@dimen/x34"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/right_img_search_btn"
+                android:textSize="@dimen/x34"
+                android:gravity="center"
+
+                android:src="@mipmap/searchimg"
+                android:visibility="gone"
+                android:paddingRight="@dimen/x30"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/right_img_add_btn"
+                android:textSize="@dimen/x34"
+                android:gravity="center"
+                android:src="@mipmap/add"
+                android:paddingTop="@dimen/y30"
+                android:paddingBottom="@dimen/y30"
+                android:visibility="gone"
+                android:paddingRight="@dimen/x30"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/right_img_btn"
+                android:textSize="@dimen/x34"
+                android:gravity="center"
+                android:src="@mipmap/qr"
+                android:paddingTop="@dimen/x27"
+                android:paddingBottom="@dimen/x27"
+                android:visibility="gone"
+                android:paddingRight="@dimen/x30"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="@color/whitesmoke"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/time_image"
+                    android:src="@mipmap/arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="按时间"
+                    android:textColor="@color/gray_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/search_et"
+                android:background="@color/white"
+                android:hint="请填写订单号"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textSize="@dimen/x24"
+                android:textColor="@color/gray_666666"
+                android:textColorHint="@color/gray_bbbbbb"
+                android:paddingTop="@dimen/y20"
+                android:paddingBottom="@dimen/y20"
+                android:paddingLeft="@dimen/x15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/search_btn"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textColor="@color/gray_333333"
+                android:text="搜索"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="@color/whitesmoke"/>
+
+    </LinearLayout>
+</LinearLayout>

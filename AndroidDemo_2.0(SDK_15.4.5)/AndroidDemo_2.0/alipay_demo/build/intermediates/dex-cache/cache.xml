@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/libs/alipaySdk-20170922.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7a534fa553c844a7ef3475eada45f5a81a170f88">
+        <dex dex="/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/2/alipaySdk-20170922_04a7afb08072e486920449b7883b2426df7716be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jackmask/.android/build-cache/0a3fe03dd4a35b7e1737696e4e5ec240d594b3f5/output/jars/libs/internal_impl-21.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_0a38145cad90527ac6727f891f1dfd9babc8384a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5ea0c8c2b60acdd9040062121b9ca308b6cb50ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jackmask/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_05c51ad9e7f7c02e832a65508e1ed100ec623a40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7d931f487f1d5a092ccee2adf2ffe31fe98c2984">
+        <dex dex="/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_efcff2f557d10f294b53bfa9cbec72f843c6ebd9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/jackmask/.android/build-cache/0a3fe03dd4a35b7e1737696e4e5ec240d594b3f5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_86891a42d7f84b276eab26f4df343e14f6e156e5/classes.dex" />
+    </item>
+
+</items>

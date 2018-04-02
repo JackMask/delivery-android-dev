@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitesmoke"
+    android:layout_height="match_parent">
+    <include layout="@layout/all_head_layout"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/y40"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/modify_head"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/y30"
+            android:paddingBottom="@dimen/y30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="头像"
+                android:paddingLeft="@dimen/x10"
+                android:textSize="@dimen/x24"
+                android:textColor="@color/gray_333333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.yuxiaolong.yuxiandelibrary.CircleImageView
+                android:id="@+id/my_head_img"
+                android:layout_width="@dimen/x100"
+                android:src="@drawable/ease_default_avatar"
+                android:layout_height="@dimen/y100" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="@color/whitesmoke"/>
+        <LinearLayout
+            android:id="@+id/modify_information"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/y30"
+            android:paddingRight="@dimen/x10"
+            android:paddingBottom="@dimen/y30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="基本信息修改"
+                android:paddingLeft="@dimen/x10"
+                android:textSize="@dimen/x24"
+                android:textColor="@color/gray_333333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+
+                android:layout_width="@dimen/x30"
+                android:src="@mipmap/selectimg"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="@color/whitesmoke"/>
+        <LinearLayout
+            android:id="@+id/modify_password"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/y30"
+            android:paddingRight="@dimen/x10"
+            android:paddingBottom="@dimen/y30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="密码重置"
+                android:paddingLeft="@dimen/x10"
+                android:textSize="@dimen/x24"
+                android:textColor="@color/gray_333333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+
+                android:layout_width="@dimen/x30"
+                android:src="@mipmap/selectimg"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/supply_hospital_layout"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/supply_hospital"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/y30"
+            android:paddingRight="@dimen/x10"
+            android:paddingBottom="@dimen/y30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="我所供应的医院"
+                android:paddingLeft="@dimen/x10"
+                android:textSize="@dimen/x24"
+                android:textColor="@color/gray_333333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+
+                android:layout_width="@dimen/x30"
+                android:src="@mipmap/selectimg"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/quit_btn"
+        android:gravity="center"
+        android:text="安全退出"
+        android:paddingBottom="@dimen/y20"
+        android:paddingTop="@dimen/y20"
+        android:textColor="@color/gray_333333"
+        android:layout_marginTop="@dimen/y30"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:background="@drawable/button_white_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

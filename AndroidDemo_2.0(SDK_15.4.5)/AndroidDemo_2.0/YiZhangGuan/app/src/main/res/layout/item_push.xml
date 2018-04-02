@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/whitesmoke"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginBottom="@dimen/x30"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/gray_333333"
+                android:textSize="@dimen/x24"
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/gray_333333"
+                android:text="统一价格"
+                android:gravity="right"
+                android:textSize="@dimen/x24"
+                android:layout_width="@dimen/x100"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/y16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name"
+                android:textColor="@color/gray_333333"
+                android:textSize="@dimen/x24"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/pirce_unite"
+                android:background="@drawable/button_gray_white_stroke_2dp"
+                android:textColor="@color/gray_333333"
+                android:textSize="@dimen/x24"
+                android:inputType="number|numberDecimal"
+                android:layout_width="@dimen/x95"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.yuxiaolong.yuxiandelibrary.NoSlideListView
+            android:id="@+id/data_list"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:id="@+id/more_btn"
+            android:layout_marginTop="@dimen/y30"
+            android:paddingBottom="@dimen/y10"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/more_iv"
+                android:scaleType="centerInside"
+                android:src="@mipmap/spreadoutimg"
+                android:layout_width="@dimen/x25"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

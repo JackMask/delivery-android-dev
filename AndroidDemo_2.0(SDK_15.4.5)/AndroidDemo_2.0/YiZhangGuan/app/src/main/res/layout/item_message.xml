@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitesmoke"
+    android:layout_height="match_parent">
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_item"
+        >
+        <LinearLayout
+            android:id="@+id/item_layout"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x30"
+            android:paddingTop="@dimen/y30"
+            android:paddingRight="@dimen/x30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/notice"
+                android:id="@+id/type_img"
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y100" />
+            <LinearLayout
+                android:layout_marginLeft="@dimen/x50"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/y5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/title_name"
+                        android:textSize="@dimen/x26"
+                        android:textColor="@color/gray_333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/title_time"
+                        android:textSize="@dimen/x26"
+                        android:gravity="right"
+                        android:textColor="@color/gray_333333"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/content_tv"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:textSize="@dimen/x26"
+                    android:textColor="@color/gray_999999"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="@dimen/y30"
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y2"
+                android:background="@color/dialog_line2"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/del_btn"
+            android:layout_width="@dimen/x150"
+            android:text="删除"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/color_ff3b2f"
+            android:layout_height="match_parent" />
+        </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+</LinearLayout>

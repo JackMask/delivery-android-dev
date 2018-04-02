@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:id="@+id/dialog_layout"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ok_btn"
+            android:textSize="@dimen/x30"
+            android:text="删除这条消息"
+            android:textColor="@color/gray_333333"
+            android:paddingTop="@dimen/y20"
+            android:paddingBottom="@dimen/y20"
+            android:gravity="center"
+            android:background="@drawable/area_bg_gray_big_btn"
+            android:layout_width="@dimen/x550"
+            android:layout_height="wrap_content" />
+</LinearLayout>

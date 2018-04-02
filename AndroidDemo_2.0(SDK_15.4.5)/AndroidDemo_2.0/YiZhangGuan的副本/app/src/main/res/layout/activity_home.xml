@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <!--<LinearLayout
+        android:id="@+id/main_head"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/colorBlue"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:text="地铁维保系统"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+            &lt;!&ndash;android:src="@mipmap/map_icon" &ndash;&gt;
+            <ImageView
+                android:id="@+id/messge_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:src="@mipmap/mesaage"
+                android:paddingRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </LinearLayout>-->
+    <RelativeLayout
+        android:background="@color/whitesmoke"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/main_bottom">
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/y100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+            <!--<RadioButton
+                android:layout_marginTop="@dimen/x16"
+                android:layout_marginBottom="@dimen/x16"
+                android:layout_marginRight="@dimen/x70"
+                android:layout_marginLeft="@dimen/x70"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:background="@drawable/home_merchants_radio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        <RadioButton
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginBottom="@dimen/x16"
+            android:layout_marginRight="@dimen/x70"
+            android:layout_marginLeft="@dimen/x70"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/home_remind_radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginBottom="@dimen/x16"
+            android:layout_marginRight="@dimen/x70"
+            android:layout_marginLeft="@dimen/x70"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/home_message_radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:layout_marginTop="@dimen/x16"
+            android:layout_marginBottom="@dimen/x16"
+            android:layout_marginRight="@dimen/x70"
+            android:layout_marginLeft="@dimen/x70"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+        <RelativeLayout
+            android:id="@+id/merchants_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="btnhome">
+
+
+
+                <ImageView
+                    android:id="@+id/show_merchants"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/x56"
+                    android:layout_height="@dimen/y56"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/logo" />
+            <ImageView
+                android:id="@+id/hide_merchants"
+                android:visibility="gone"
+                android:layout_width="@dimen/x36"
+                android:layout_height="@dimen/y36"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/logo_g"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+
+      <RelativeLayout
+            android:id="@+id/remind_btn"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="btnhome">
+
+          <ImageView
+              android:id="@+id/show_remind"
+              android:visibility="gone"
+              android:layout_width="@dimen/x56"
+              android:layout_height="@dimen/y56"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:scaleType="fitCenter"
+              android:src="@mipmap/secondbtn_g" />
+
+                <ImageView
+                    android:id="@+id/hide_remind"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/y36"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/secondbtn" />
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/message_btn"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="btnhome">
+
+            <ImageView
+                android:id="@+id/show_message"
+                android:visibility="gone"
+                android:layout_width="@dimen/x56"
+                android:layout_height="@dimen/y56"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/thirdbtn_g" />
+            <RelativeLayout
+                android:id="@+id/hide_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/y36"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/thirdbtn" />
+                <TextView
+                    android:id="@+id/new_msg_number"
+                    android:layout_width="@dimen/x26"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/x26"
+                    android:background="@drawable/bg_red_dian"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x18"
+                    android:layout_marginRight="@dimen/x109"
+                    android:layout_marginEnd="@dimen/x66"
+                    android:layout_marginTop="@dimen/y24"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:onClick="btnhome">
+
+            <ImageView
+                android:id="@+id/show_my"
+                android:visibility="gone"
+                android:layout_width="@dimen/x56"
+                android:layout_height="@dimen/y56"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/froubtn_g" />
+
+                <ImageView
+                    android:id="@+id/hide_my"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/y36"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/froubtn" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

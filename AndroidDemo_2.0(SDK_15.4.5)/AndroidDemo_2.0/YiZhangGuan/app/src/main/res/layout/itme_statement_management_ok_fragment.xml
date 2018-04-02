@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        android:paddingTop="@dimen/y20"
+        android:layout_marginBottom="@dimen/y20"
+        android:paddingBottom="@dimen/y20"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="医院名称"
+                    android:textSize="@dimen/x24"
+                    android:textColor="@color/gray_666666"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/hospital"
+                    android:textSize="@dimen/x24"
+                    android:textColor="@color/color_2ea1fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/type"
+
+                android:textSize="@dimen/x24"
+                android:gravity="right"
+                android:textColor="@color/color_ff4d4d"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/y20"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="请求时间"
+                    android:textSize="@dimen/x24"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/request_time"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:textSize="@dimen/x24"
+                    android:textColor="@color/gray_666666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/y20"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="实际入库金额"
+                    android:textSize="@dimen/x24"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/actual_amount"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:textSize="@dimen/x24"
+                    android:textColor="@color/gray_666666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="形式入库金额"
+                    android:textSize="@dimen/x24"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="right"
+                    android:id="@+id/form_amount"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:textSize="@dimen/x24"
+                    android:textColor="@color/gray_666666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/y20"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="退货金额"
+                    android:textSize="@dimen/x24"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/returns_amount"
+                    android:textSize="@dimen/x24"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:textColor="@color/gray_666666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="应付金额"
+                    android:textSize="@dimen/x24"
+                    android:gravity="right"
+                    android:layout_width="@dimen/x150"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/should_amount"
+                    android:gravity="right"
+                    android:textColor="@color/color_ff4d4d"
+                    android:textSize="@dimen/x24"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/y20"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:background="@drawable/button_gray_white_stroke_2dp"
+                android:text="账单确认"
+                android:paddingTop="@dimen/y6"
+                android:paddingLeft="@dimen/x20"
+                android:paddingRight="@dimen/x20"
+                android:paddingBottom="@dimen/y6"
+                android:textSize="@dimen/x24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

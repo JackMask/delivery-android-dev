@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 46,
+                        "endOffset": 98
+                    }
+                }
+            }
+        ]
+    }
+]

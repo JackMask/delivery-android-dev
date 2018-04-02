@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitesmoke"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tab_name"
+        android:paddingTop="@dimen/y20"
+        android:textColor="@color/gray_333333"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x20"
+        android:text="基本信息"
+        android:textSize="@dimen/x24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

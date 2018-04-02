@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toast_actionsheet_top_normal"
+        android:gravity="center"
+        android:minHeight="@dimen/y90"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:textColor="@color/dialog_line"
+        android:textSize="@dimen/x26"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/sLayout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+         >
+
+        <LinearLayout
+            android:id="@+id/lLayout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y12"
+    android:background="@color/dialog_line2"/>
+    <TextView
+        android:id="@+id/txt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:text="取消"
+        android:textSize="@dimen/x32"
+        android:textColor="@color/gray_333333"
+        android:background="@drawable/actionsheet_single_selector"
+        android:gravity="center" />
+
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitesmoke"
+    android:layout_height="match_parent">
+    <include layout="@layout/all_head_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/save_btn">
+        <RelativeLayout
+            android:paddingBottom="@dimen/x20"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/y30"
+        android:paddingRight="@dimen/x30"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/y20"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/y20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报修单号" />
+
+            <TextView
+                android:id="@+id/repair_number"
+                android:layout_marginLeft="@dimen/x20"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingTop="@dimen/y16"
+                android:text="固定资产"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/assets_name"
+                android:hint="固定资产名称"
+                android:textColorHint="@color/gray_bbbbbb"
+                android:paddingTop="@dimen/y16"
+                android:background="@color/white"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_666666"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingTop="@dimen/y16"
+                android:text="报修科室"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/select_department"
+                android:layout_marginLeft="@dimen/x20"
+                android:paddingTop="@dimen/y16"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/department_name"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/x26"
+                    android:textColor="@color/gray_666666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_weight="20"
+                    android:src="@mipmap/selectimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingTop="@dimen/y16"
+                android:text="报修时间"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/time_tv"
+                android:paddingTop="@dimen/y16"
+                android:layout_marginLeft="@dimen/x20"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:id="@+id/description"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingRight="@dimen/x30"
+                    android:paddingLeft="@dimen/x30"
+                    android:paddingTop="@dimen/y20"
+                    android:paddingBottom="@dimen/y20"
+                    android:text="故障描述"
+                    android:textColor="@color/gray_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <ImageView
+                    android:id="@+id/input_btn"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:src="@mipmap/voice_iput1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/input_play"
+                    android:layout_marginLeft="@dimen/x60"
+                    android:src="@mipmap/voice_play1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+    <EditText
+
+        android:textColorHint="@color/gray_bbbbbb"
+        android:hint="请描述大概情况"
+        android:textSize="@dimen/x26"
+        android:textColor="@color/gray_666666"
+        android:paddingRight="@dimen/x30"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/y20"
+        android:gravity="start"
+        android:paddingBottom="@dimen/y20"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:id="@+id/malfunction_et"
+        android:layout_below="@+id/description" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@color/white"
+        android:paddingRight="@dimen/x30"
+        android:paddingLeft="@dimen/x30"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/malfunction_et">
+        <TextView
+            android:textColor="@color/gray_666666"
+            android:text="请添加故障照片(选填)"
+            android:textSize="@dimen/x26"
+            android:layout_marginBottom="@dimen/y40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.yuxiaolong.yuxiandelibrary.view.ProhibitSlideGridView
+            android:id="@+id/pic_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+        <TextView
+            android:id="@+id/save_btn"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_marginLeft="@dimen/x40"
+            android:gravity="center"
+            android:paddingBottom="@dimen/y20"
+            android:paddingTop="@dimen/y20"
+            android:background="@color/color_2ea1fb"
+            android:textColor="@color/white"
+            android:text="保存报修单"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

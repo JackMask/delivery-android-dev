@@ -1,0 +1,24 @@
+#Internal package file, do not edit.
+#Fri Jan 19 17:57:35 CST 2018
+2.base=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_
+5.file=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/msp_demo_title.png
+5.set=ANDROID_RESOURCE
+3.base=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_
+6.file=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+2.set=ANDROID_RESOURCE
+4.base=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_
+count=7
+0.file=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/msp_icon.png
+5.base=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_
+4.set=ANDROID_RESOURCE
+6.base=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_
+1.file=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_/res/layout/pay_main.xml
+1.set=ANDROID_RESOURCE
+2.file=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_/res/drawable-hdpi-v4/msp_demo_title_bg.png
+6.set=ANDROID_RESOURCE
+0.base=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_
+3.file=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+3.set=ANDROID_RESOURCE
+1.base=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_
+4.file=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/res/resources-debug.ap_/res/layout/pay_external.xml
+0.set=ANDROID_RESOURCE

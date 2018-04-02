@@ -1,0 +1,13 @@
+#Fri Jan 19 17:57:46 CST 2018
+renamed.3=classes3.dex
+renamed.2=classes.dex
+renamed.1=classes4.dex
+renamed.0=classes2.dex
+base.3=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_0a38145cad90527ac6727f891f1dfd9babc8384a
+base.2=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_05c51ad9e7f7c02e832a65508e1ed100ec623a40
+base.1=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/2/alipaySdk-20170922_04a7afb08072e486920449b7883b2426df7716be
+base.0=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_86891a42d7f84b276eab26f4df343e14f6e156e5
+file.3=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_0a38145cad90527ac6727f891f1dfd9babc8384a/classes.dex
+file.2=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_05c51ad9e7f7c02e832a65508e1ed100ec623a40/classes.dex
+file.1=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/2/alipaySdk-20170922_04a7afb08072e486920449b7883b2426df7716be/classes.dex
+file.0=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_86891a42d7f84b276eab26f4df343e14f6e156e5/classes.dex

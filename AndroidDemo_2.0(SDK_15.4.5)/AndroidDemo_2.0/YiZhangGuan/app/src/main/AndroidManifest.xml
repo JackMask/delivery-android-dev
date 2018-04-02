@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.guxingdongli.yizhangguan">
+
+    <permission android:name="com.guxingdongli.yizhangguan.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
+
+    <!-- Required -->
+    <uses-permission android:name="com.guxingdongli.yizhangguan.permission.JPUSH_MESSAGE" />
+    <!--用于申请获取相机-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:name=".controller.YiZhangGuanApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize|stateHidden"
+        android:supportsRtl="true"
+        >
+        <activity android:name=".view.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登陆 -->
+        <activity
+        android:name=".view.login.LoginActivity"
+        android:label="登陆"
+        />
+        <activity
+            android:name=".view.login.RegisteredActivity"
+            android:label="注册"
+            />
+        <activity
+            android:name=".view.login.SelectAddressActivity"
+            android:label="注册选择地址"
+            />
+        <activity
+            android:name=".view.login.ForgetPasswordActivity"
+            android:label="忘记密码"
+            />
+        <activity
+            android:name=".view.home.HomeActivity"
+            android:label="主页面"
+            />
+        <activity
+            android:name=".view.home.home_hospital.StorageHospitalActivity"
+            android:theme="@style/AppThemeprice"
+            android:label="医院-->验收入库"
+            />
+        <activity
+            android:name=".view.home.home_merchants.MyOrderDetailsActivity"
+            android:theme="@style/AppThemeprice"
+            android:label="供应商-->验收入库"
+            />
+
+        <activity
+            android:name=".view.message.MessageDetailsActivity"
+            android:label="消息详情"
+            />
+        <activity
+            android:name=".view.home.home_merchants.PushActivity"
+            android:label="基础数据推送"
+            />
+        <activity
+            android:name=".view.home.home_merchants.PushSelectHospitalActivity"
+            android:label="基础数据推送-->选择医院"
+            />
+        <activity
+            android:name=".view.home.home_merchants.MyOrderDetailsNewActivity"
+            android:label="供应商端订单详情"
+            />
+
+        <activity
+            android:name=".view.remind.RemindListActivity"
+            android:label="工作提醒列表页"
+            />
+        <activity android:name=".view.message.DelDialog"
+            android:screenOrientation="portrait"
+            android:label="输入群聊名"
+            android:theme="@style/MyDialogStyle1"/>
+        <activity android:name=".view.CustomScanActivity"
+            android:label="二维码"/>
+        <activity android:name=".view.home.home_hospital.StoraeHospitalDetailsActivity"
+            android:label="验收入库详情"/>
+        <activity android:name=".view.home.home_hospital.MyRepairOrderDetailsActivity"
+            android:label="维修单详情/设备详情"/>
+        <activity android:name=".view.myinfo.ModifyInformationActivity"
+            android:label="修改基本信息"/>
+        <activity android:name=".view.myinfo.ModifyPasswordActivity"
+            android:label="修改密码"/>
+        <activity android:name=".view.home.home_hospital.AssetsRepairActivity"
+            android:label="资产报修"/>
+        <activity android:name=".view.home.home_hospital.ServiceAcceptanceActivity"
+            android:theme="@style/AppThemeprice"
+            android:label="维修验收"/>
+        <activity android:name=".view.home.home_hospital.AcceptanceActivity"
+        android:label="验收维修单"/>
+        <activity android:name=".view.home.home_merchants.QRExamineActivity"
+            android:label="查看二维码"/>
+        <activity android:name=".view.home.home_merchants.MyHospitalActivity"
+            android:label="我所供应的医院"/>
+        <activity android:name=".view.home.home_hospital.AcceptanceListActivity"
+            android:label="验收维修单列表"/>
+        <activity android:name=".view.home.home_hospital.EquipmentDynamicAcivity"
+            android:label="设备动态"/>
+        <activity android:name=".view.home.home_merchants.MakeUpInfoActivity"
+            android:label="补录订购器材信息"/>
+        <activity android:name=".view.home.home_merchants.DaisDataDetailsActivity"
+            android:label="基础数据详情"/>
+        <activity android:name=".view.home.home_hospital.HospitalFillInRepairOrderActivity"
+            android:label="医院端-->填写维修单"/>
+        <activity android:name=".view.home.home_hospital.HospitalEnterCostActivity"
+            android:label="医院端-->录入费用"/>
+        <activity android:name=".view.home.home_hospital.HospitalEnterAccessoriesActivity"
+            android:label="医院端-->配件费用"/>
+
+        <activity android:name=".view.home.home_merchants.StockingInfoActivity"
+        android:label="补录备货单器材信息"/>
+        <activity android:name=".view.home.home_merchants.SelectAvailabilityHospitalActivity"
+            android:label="选择供货医院"/>
+        <activity android:name=".view.home.home_merchants.EnterCostActivity"
+            android:label="维修费用和配件费用"/>
+        <activity android:name=".view.home.home_merchants.FillInRepairOrderActivity"
+            android:label="填写维修单"/>
+        <activity android:name=".view.home.home_merchants.DasisDataActivity"
+            android:theme="@style/AppThemeprice"
+            android:label="基础数据"/>
+        <activity android:name=".view.login.ProtocolActivity"
+            android:theme="@style/AppThemeprice"
+            android:label="基础数据"/>
+        <activity android:name=".view.home.home_merchants.PreparationOrderActivity"
+            android:theme="@style/AppThemeprice"
+            android:label="我的备货单"/>
+        <activity android:name=".view.home.home_merchants.StatementManagementActivity"
+            android:theme="@style/AppThemeprice"
+            android:label="对账单管理"/>
+        <activity android:name=".view.home.home_merchants.AddStatementActivity"
+            android:label="添加对账单"/>
+        <activity android:name=".view.home.home_hospital.AddRepairActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:label="添加报修单"/>
+        <activity android:name="com.yuxiaolong.yuxiandelibrary.imgborwser.activity.UTImageBrowserActivity"
+            android:label="显示大图"/>
+
+        <activity android:name=".view.home.home_hospital.MyRepairOrderActivity"
+            android:theme="@style/AppThemeprice"
+            android:label="维修单总汇"/>
+        <activity android:name=".view.home.home_merchants.MyOrderActivity"
+            android:theme="@style/AppThemeprice"
+            android:label="我的订单"/>
+        <activity android:name=".view.home.dialog.PromptDialog"
+            android:screenOrientation="portrait"
+            android:label="提示"
+            android:theme="@style/MyDialogStyle1"/>
+        <activity android:name=".view.home.dialog.InputDialog"
+            android:screenOrientation="portrait"
+            android:label="提示"
+            android:theme="@style/MyDialogStyle1"/>
+        <activity android:name=".view.home.dialog.ScanCodeDialog"
+            android:screenOrientation="portrait"
+            android:label="提示"
+            android:theme="@style/MyDialogStyle1"/>
+        <!--<activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <service android:name="com.guxingdongli.yizhangguan.controller.MyService" >
+        </service>
+        <service android:name="com.amap.api.location.APSService"></service>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="e46df5c7e0c549f6859e3bc14dc2edf1">
+
+        </meta-data>
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <provider
+            android:authorities="com.guxingdongli.yizhangguan.DataProvider"
+            android:name="cn.jpush.android.service.DataProvider"
+            android:exported="true"
+            />
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.guxingdongli.yizhangguan" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.guxingdongli.yizhangguan" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.guxingdongli.yizhangguan"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data android:name="JPUSH_APPKEY" android:value="d19a679753e1c20eec5b6bde"/>
+        <receiver
+            android:name="com.guxingdongli.yizhangguan.controller.BoardcastReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <!--Required 用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required 用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required 用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required 用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/><!--开机广播-->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/><!--网络状态改变广播-->
+                <category android:name="com.guxingdongli.yizhangguan" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.guxingdongli.yizhangguan.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>

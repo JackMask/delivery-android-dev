@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitesmoke"
+    android:layout_height="match_parent">
+    <include layout="@layout/all_head_layout"/>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/y40"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y50">
+                    <ImageView
+                        android:src="@mipmap/searchimg"
+                        android:visibility="visible"
+                        android:scaleType="centerInside"
+                        android:layout_width="@dimen/x40"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView13"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <EditText
+                        android:id="@+id/hospital_tv"
+                        android:background="@color/whitesmoke"
+                        android:visibility="visible"
+                        android:textColorHint="@color/gray_bbbbbb"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/x24"
+                        android:hint="请输入医院"
+                        android:textColor="@color/gray_333333"
+                        android:singleLine="true"
+                        android:imeOptions="actionSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_toRightOf="@+id/imageView13"
+                        />
+
+                </RelativeLayout>
+                <View
+                    android:layout_marginTop="@dimen/y15"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y3"
+                    android:background="@color/dialog_line2"/>
+            </LinearLayout>
+            <com.yuxiaolong.yuxiandelibrary.NoSlideListView
+                android:id="@+id/filter_list"
+                android:dividerHeight="0px"
+                android:divider="#ffffffff"
+                android:layout_marginRight="@dimen/x60"
+                android:layout_marginLeft="@dimen/x120"
+                android:layout_marginTop="@dimen/y60"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

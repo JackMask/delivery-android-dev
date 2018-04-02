@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:paddingTop="@dimen/y30"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="3"
+                android:text="订单号:"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/order_num"
+                android:textSize="@dimen/x26"
+                android:layout_weight="1"
+                android:textColor="@color/gray_666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+
+            android:textColor="@color/orangered"
+            android:textSize="@dimen/x26"
+            android:gravity="right"
+            android:id="@+id/status_tv"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="3"
+                android:text="时间:"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/time_tv"
+                android:textSize="@dimen/x26"
+                android:layout_weight="1"
+                android:textColor="@color/gray_666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/examine_btn"
+                android:paddingTop="@dimen/y6"
+                android:paddingRight="@dimen/x20"
+                android:paddingLeft="@dimen/x20"
+                android:paddingBottom="@dimen/y6"
+                android:text="验收入库"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x26"
+                android:gravity="right"
+                android:background="@drawable/button_white_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="3"
+                android:text="供应商:"
+                android:textSize="@dimen/x26"
+                android:textColor="@color/gray_666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/supplier_tv"
+                android:textSize="@dimen/x26"
+                android:layout_weight="1"
+                android:textColor="@color/gray_666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+    <com.yuxiaolong.yuxiandelibrary.NoSlideListView
+        android:layout_marginTop="@dimen/x30"
+        android:id="@+id/data_list"
+        android:divider="@color/white"
+        android:dividerHeight="0px"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/more_btn"
+        android:layout_marginTop="@dimen/y30"
+        android:paddingBottom="@dimen/y10"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/more_iv"
+            android:scaleType="centerInside"
+            android:src="@mipmap/spreadoutimg"
+            android:layout_width="@dimen/x25"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/whitesmoke"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"/>
+</LinearLayout>

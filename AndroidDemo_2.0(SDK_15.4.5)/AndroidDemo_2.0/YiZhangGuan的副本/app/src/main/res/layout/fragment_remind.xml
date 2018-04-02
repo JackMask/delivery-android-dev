@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/whitesmoke"
+    android:layout_height="match_parent">
+    <include layout="@layout/all_head_layout"/>
+    <RelativeLayout
+        android:id="@+id/chart_layout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/see_all" />
+    <TextView
+        android:id="@+id/see_all"
+        android:paddingTop="@dimen/y16"
+        android:paddingBottom="@dimen/y16"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:background="@drawable/em_button_normal_shape"
+        android:text="查看所有"
+        android:textColor="@color/gray_333333"
+        android:textSize="@dimen/x24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>

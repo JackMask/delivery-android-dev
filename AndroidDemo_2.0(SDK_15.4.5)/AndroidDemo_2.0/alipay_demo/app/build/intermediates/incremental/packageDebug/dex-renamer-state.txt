@@ -1,0 +1,7 @@
+#Fri Jan 19 17:57:47 CST 2018
+base.0=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5ea0c8c2b60acdd9040062121b9ca308b6cb50ec
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_efcff2f557d10f294b53bfa9cbec72f843c6ebd9/classes.dex
+base.1=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_efcff2f557d10f294b53bfa9cbec72f843c6ebd9
+file.0=/Users/jackmask/Downloads/WS_APP_PAY_SDK_BASE_2.0/Demo/AndroidDemo_2.0(SDK_15.4.5)/AndroidDemo_2.0/alipay_demo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_5ea0c8c2b60acdd9040062121b9ca308b6cb50ec/classes.dex

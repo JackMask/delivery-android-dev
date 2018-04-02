@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/wx_mian"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:gravity="center"
+              android:orientation="vertical" >
+        <ProgressBar
+            android:id="@+id/update_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="15dip"
+            android:indeterminate="false"
+            android:padding="2dip"
+            />
+</LinearLayout>

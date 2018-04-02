@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/x20"
+        android:paddingBottom="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/gray_666666"
+                android:id="@+id/name_tv"
+                android:singleLine="true"
+                android:lines="1"
+                android:textSize="@dimen/x26"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:singleLine="true"
+                android:lines="1"
+                android:textColor="@color/gray_666666"
+                android:gravity="center"
+                android:textSize="@dimen/x26"
+                android:id="@+id/model_tv"
+                android:layout_weight="2.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:textSize="@dimen/x26"
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/gray_666666"
+            android:singleLine="true"
+            android:lines="1"
+            android:id="@+id/num_tv"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:singleLine="true"
+            android:lines="1"
+            android:textSize="@dimen/x26"
+            android:textColor="@color/gray_666666"
+            android:gravity="center"
+            android:id="@+id/price_tv"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/supplier_layout"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/gray_666666"
+                android:text="批号："
+                android:singleLine="true"
+                android:lines="1"
+                android:textSize="@dimen/x26"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  />
+            <TextView
+                android:id="@+id/batch_number"
+                android:text="r4783947892374"
+                android:textColor="@color/gray_666666"
+                android:singleLine="true"
+                android:lines="1"
+                android:textSize="@dimen/x26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/gray_666666"
+                android:text="有效期："
+                android:singleLine="true"
+                android:lines="1"
+                android:textSize="@dimen/x26"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  />
+            <TextView
+                android:id="@+id/validity_period"
+                android:textSize="@dimen/x26"
+                android:text="2018-01-01 09:09:01"
+                android:textColor="@color/gray_666666"
+                android:singleLine="true"
+                android:lines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
