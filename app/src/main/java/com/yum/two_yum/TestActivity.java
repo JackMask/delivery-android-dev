@@ -6,4 +6,5 @@ package com.yum.two_yum;
  */
 
 public class TestActivity {
+    System.out;
 }
