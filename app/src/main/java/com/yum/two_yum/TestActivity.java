@@ -6,5 +6,5 @@ package com.yum.two_yum;
  */
 
 public class TestActivity {
-221111ssdddfd
+221111
 }
