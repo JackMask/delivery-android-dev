@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="68dp"
+        android:textSize="36dp"
+        android:text="@string/STATS"
+        android:textStyle="bold"
+        android:paddingLeft="24dp"
+        android:textColor="@color/color_484848"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/order_history_btn"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:paddingTop="22dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/color_484848"
+            android:text="@string/ORDERHISTORY"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/right_arrow_gray1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_DBDBDB"/>
+    <LinearLayout
+        android:id="@+id/transaction_history_btn"
+        android:orientation="horizontal"
+        android:paddingTop="22dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@color/color_484848"
+            android:text="@string/TRANSACTIONHISTORY"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/right_arrow_gray1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_DBDBDB"/>
+        <TextView
+            android:layout_marginTop="21dp"
+            android:textSize="12dp"
+            android:textColor="@color/color_FF767676"
+            android:text="@string/SERVICEPAYOUTEVERYWEDNESDAY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

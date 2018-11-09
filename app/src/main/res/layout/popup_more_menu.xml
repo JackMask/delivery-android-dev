@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="127dp"
+    android:orientation="vertical"
+    android:layout_marginRight="20dp"
+    android:background="@mipmap/popupwindow_bg"
+    android:layout_height="106dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="127dp"
+        android:layout_height="106dp">
+        <LinearLayout
+            android:id="@+id/share_btn"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/share_2"
+                android:layout_width="28dp"
+                android:layout_marginRight="7dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:id="@+id/prompt_tv"
+                android:text="@string/EDIT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/report_btn"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/report_img"
+                android:layout_width="28dp"
+                android:layout_marginRight="7dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:text="@string/SORTING"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

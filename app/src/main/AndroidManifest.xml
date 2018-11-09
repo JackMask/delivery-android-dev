@@ -1,21 +1,261 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yum.two_yum">
+    <!-- Required -->
+    <permission android:name="com.yum.two_yum.permission.JPUSH_MESSAGE" android:protectionLevel="signature" />
 
+    <!-- Required -->
+    <uses-permission android:name="com.yum.two_yum.permission.JPUSH_MESSAGE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Required 一些系统要求的权限，如访问网络等-->
+
+
+    <uses-permission android:name="com.yum.two_yum.permission.JPUSH_MESSAGE"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- Optional for location -->
+
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.GET_TASKS"/>
     <application
-        android:allowBackup="true"
+        android:name=".controller.YumApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:hardwareAccelerated="true"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        android:configChanges="keyboardHidden|orientation|locale|layoutDirection"
+        android:theme="@style/AppTheme.NoActionBar"
+
+        >
+
+        <activity android:name=".view.WelcomeActivity"
+
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+
+            android:configChanges="locale|layoutDirection"
+            android:name=".view.login.LoginActivity"/>
+        <activity android:name=".view.login.RegisteredActivity"/>
+        <activity android:name=".view.login.ForgetPasswordActivity"/>
+        <activity android:name=".view.client.ClientActivity"/>
+        <activity android:name=".view.merchants.MerchantsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".view.merchants.menu.YourIdActivity"
+            />
+        <activity android:name=".view.merchants.menu.BankAccountActivity"/>
+        <activity android:name=".view.merchants.menu.OperationsSettingsActivity"/>
+        <activity android:name=".view.merchants.menu.NowMenuActivity"/>
+        <activity android:name=".view.merchants.menu.PreviewMenuActivity"/>
+        <activity android:name=".view.merchants.menu.SortingMenuActivity"/>
+        <activity android:name=".view.merchants.menu.AddEditMenuActivity"/>
+        <activity android:name=".view.merchants.statistics.OrderHistoryActivity"/>
+        <activity android:name=".view.merchants.statistics.OrderHistoryDetailsActivity"/>
+        <activity android:name=".view.merchants.statistics.TransactionHistoryActivity"/>
+        <activity android:name=".view.merchants.merchantsOrders.DagDetailsActivity"/>
+        <activity android:name=".view.client.clientorder.FilterActivity"/>
+        <activity android:name=".view.client.clientorder.SearchNearbyActivity"/>
+        <activity android:name=".view.client.clientorder.AddToAddressActivity"/>
+        <activity android:name=".view.client.clientorder.SearchAddressActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".view.client.business.BusinessDetailsActivity"/>
+        <activity android:name=".view.client.business.DishesDetailsActivity"/>
+        <activity android:name=".view.client.business.ProvideCreditActivity"/>
+        <activity android:name=".view.client.business.ChooseDeliveryAddressActivity"/>
+        <activity android:name=".view.client.orders.OrdersDetailsActivity"/>
+        <activity android:name=".view.client.orders.OrdersHelpActivity"/>
+        <activity android:name=".view.my.PrivacyServiceTermsActivity"/>
+
+        <activity android:name=".view.guide.ReleaseActivity"/>
+        <activity android:name=".view.guide.document.Document1Activity"/>
+        <activity android:name=".view.guide.document.Document2Activity"/>
+        <activity android:name=".view.guide.document.Document3Activity"/>
+        <activity android:name=".view.guide.document.Document4Activity"/>
+        <activity android:name=".view.guide.bank.Bank5Activity"/>
+        <activity android:name=".view.guide.bank.Bank6Activity"/>
+        <activity android:name=".view.guide.operations.Operations7Activity"/>
+        <activity android:name=".view.guide.operations.Operations8Activity"/>
+        <activity android:name=".view.guide.operations.Operations9Activity"/>
+        <activity android:name=".view.guide.operations.Operations10Activity"/>
+        <activity android:name=".view.guide.operations.Operations11Activity"/>
+        <activity android:name=".view.guide.operations.Operations12Activity"/>
+        <activity android:name=".view.guide.operations.Operations12AddActivity"/>
+        <activity android:name=".view.guide.operations.Operations13Activity"/>
+        <activity android:name=".view.guide.operations.Operations14Activity"/>
+        <activity android:name=".view.guide.operations.Operations15Activity"/>
+        <activity android:name=".view.guide.operations.Operations16Activity"/>
+
+        <activity android:name=".view.guide.SelectCountryActivity"/>
+        <activity android:name=".view.guide.SelectTimeActivity"/>
+        <activity android:name=".view.guide.SelelctKeywordActivity"/>
+
+        <activity android:name=".view.my.SettingsActivity"/>
+        <activity android:name=".view.my.TermsServiceActivity"/>
+        <activity android:name=".view.my.ModifyInformationActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".view.ReportActivity"/>
+        <activity android:name="com.yum.two_yum.utile.imgborwser.activity.UTImageBrowserActivity"/>
+        <activity android:name=".view.dialog.PromptDialog"
+            android:theme="@style/MyDialogStyle1"/>
+        <activity android:name=".view.dialog.Prompt2Dialog"
+            android:theme="@style/MyDialogStyle1"/>
+        <activity android:name=".view.dialog.Prompt3Dialog"
+            android:theme="@style/MyDialogStyle1"/>
+        <activity android:name=".view.client.business.SubmitOrdersActivity"/>
+        <service android:name=".controller.TimerService"></service>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.yum.two_yum.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBEqVtoPgib5R8l2HfEFbp4k69mSsAA-9Q"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBEqVtoPgib5R8l2HfEFbp4k69mSsAA-9Q"/>
+        <receiver
+            android:name="com.yum.two_yum.utile.LanguageReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"></meta-data>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <provider
+            android:authorities="com.yum.two_yum.DataProvider"
+            android:name="cn.jpush.android.service.DataProvider"
+            android:exported="true"
+            />
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.yum.two_yum" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.yum.two_yum" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.yum.two_yum"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data android:name="JPUSH_APPKEY" android:value="da6a59549d38053600dc31b3"/>
+        <receiver
+            android:name="com.yum.two_yum.controller.BoardcastReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <!--Required 用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required 用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required 用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required 用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/><!--开机广播-->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/><!--网络状态改变广播-->
+                <category android:name="com.yum.two_yum" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

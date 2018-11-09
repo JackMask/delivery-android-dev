@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <com.yum.two_yum.utile.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="right|center"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+                <ImageView
+                    android:id="@+id/stat_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="19dp"
+                    android:src="@mipmap/add_img"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="24dp"
+                        android:text="@string/MENU"
+                        android:textColor="@color/color_484848"
+                        android:textSize="36dp"
+                        android:textStyle="bold" />
+
+
+
+                    <LinearLayout
+                        android:id="@+id/preview_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="24dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/PREVIEW"
+                            android:textColor="@color/color_9f9f9f"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/right_arrow_gray1" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/add_menu_btn"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="25dp"
+
+                    />
+            </RelativeLayout>
+            <!--android:src="@mipmap/add_img"-->
+            <RelativeLayout
+                android:id="@+id/menu_layout_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <LinearLayout
+                    android:id="@+id/menu_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/your_id_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="22dp"
+                        android:paddingTop="22dp">
+
+                        <TextView
+                            android:id="@+id/your_id_tv"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/BUSINESSLICENSE"
+                            android:textColor="@color/color_484848"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/right_arrow_gray1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_DBDBDB" />
+
+                    <LinearLayout
+                        android:id="@+id/bank_account_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="22dp"
+                        android:paddingTop="22dp">
+
+                        <TextView
+                            android:id="@+id/bank_account_tv"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/BANKACCOUNT"
+                            android:textColor="@color/color_484848"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/right_arrow_gray1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_DBDBDB" />
+
+                    <LinearLayout
+                        android:id="@+id/operation_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="22dp"
+                        android:paddingTop="22dp">
+
+                        <TextView
+                            android:id="@+id/operation_tv"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/OPERATIONSETTINGS"
+                            android:textColor="@color/color_484848"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/right_arrow_gray1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_DBDBDB" />
+
+                    <LinearLayout
+                        android:id="@+id/now_mun_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="22dp"
+                        android:paddingTop="22dp">
+
+                        <TextView
+                            android:id="@+id/now_mun_tv"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/TODAYSMENU"
+                            android:textColor="@color/color_484848"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/right_arrow_gray1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_DBDBDB" />
+
+                    <LinearLayout
+                        android:id="@+id/list_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="22dp"
+                        android:paddingTop="22dp">
+
+                        <TextView
+                            android:id="@+id/list_tv"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/OPENCLOSE"
+                            android:textColor="@color/color_484848"
+                            android:textSize="20dp" />
+
+                        <com.yum.two_yum.utile.view.SwitchView
+                            android:id="@+id/v_switch_1"
+                            android:layout_width="53dp"
+                            android:layout_height="37dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            app:isOpened="false" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_DBDBDB" />
+
+                    <TextView
+                        android:id="@+id/close_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="22dp"
+                        android:text="@string/PERMANENTLYDEACTIVATE"
+                        android:textColor="@color/color_007AFF"
+                        android:textSize="16dp" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/no_menu"
+                    android:visibility="visible"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.yum.two_yum.utile.pulltorefresh.PullToRefreshScrollView>
+</LinearLayout>

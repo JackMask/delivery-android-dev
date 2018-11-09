@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_item"
+        >
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingTop="23dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="21dp"
+        android:layout_height="wrap_content">
+        <com.yum.two_yum.utile.CircleImageView
+            android:id="@+id/store_img"
+            android:layout_width="66dp"
+            android:layout_marginRight="24dp"
+            android:layout_height="66dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_484848"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:src="@mipmap/right_arrow_gray1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/status_tv"
+                    android:textSize="15dp"
+                    android:textColor="@color/color_484848"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/time_tv"
+                    android:textSize="13dp"
+                    android:layout_weight="1.8"
+                    android:gravity="bottom|right"
+                    android:textColor="@color/color_484848"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/del_btn"
+            android:layout_width="82dp"
+            android:text="@string/DELETE"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@color/color_ff3b2f"
+            android:layout_height="match_parent" />
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/color_FFd7d7d7"/>
+
+
+</LinearLayout>

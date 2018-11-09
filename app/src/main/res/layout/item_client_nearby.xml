@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/title_view"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="bottom|center"
+
+        android:layout_width="match_parent"
+        android:layout_height="136dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/header_footer_top_bottom_padding"
+            android:paddingLeft="@dimen/header_footer_left_right_padding"
+            android:paddingRight="@dimen/header_footer_left_right_padding"
+            android:paddingTop="@dimen/header_footer_top_bottom_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:indeterminateDrawable="@drawable/progressbar_rotate"
+            android:layout_height="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="218dp">
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/mAbSlidingPlayView"
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                app:rollviewpager_play_delay="3000"/>
+
+
+
+            <TextView
+                android:id="@+id/close_tv"
+                android:visibility="gone"
+                android:background="@color/color_3F000000"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:text="@string/CLOSED"
+                android:textColor="@color/white"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/collection_btn"
+                android:src="@mipmap/heart_white_big"
+                android:layout_width="38dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="38dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name_tv"
+                android:textColor="@color/color_FF0A1710"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/collection_gray"
+                    android:layout_width="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:id="@+id/like_num_tv"
+                    android:textSize="11dp"
+                    android:text="99999"
+                    android:textColor="@color/color_FF767676"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/coordinate_gray"
+                    android:layout_width="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:id="@+id/distance_tv"
+                    android:textSize="11dp"
+                    android:text="5 英里"
+                    android:textColor="@color/color_FF767676"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/series_tv"
+                android:layout_weight="1"
+                android:maxLines="2"
+
+                android:textColor="@color/color_484848"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.yum.two_yum.utile.CircleImageView
+                android:id="@+id/head_img"
+                android:layout_width="48dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/reserved_v"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/white"/>
+
+</LinearLayout>

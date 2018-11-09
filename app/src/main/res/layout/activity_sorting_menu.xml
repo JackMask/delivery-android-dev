@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/del_btn"
+            android:layout_width="48dp"
+            android:paddingRight="20dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/del_pic"
+            android:top="28dp" />
+
+        <TextView
+            android:id="@+id/save_btn"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:textColor="@color/color_484848"
+            android:text="@string/SAVEORDER"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/color_FFd7d7d7"/>
+    <!--dslv:click_remove_id="@id/click_remove"
+    dslv:drag_handle_id="@id/drag_handle"-->
+    <com.mobeta.android.dslv.DragSortListView
+        android:id="@+id/dslvList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:dividerHeight="0px"
+        android:divider="@color/white"
+        android:padding="3dp"
+        dslv:click_remove_id="@id/dishes_img"
+        dslv:collapsed_height="1px"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@id/sorting_layout"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.6"
+        dslv:remove_enabled="true"
+        dslv:remove_mode="clickRemove"
+        dslv:slide_shuffle_speed="0.3" />
+</LinearLayout>

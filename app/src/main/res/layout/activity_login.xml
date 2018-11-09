@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="18dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/del_btn"
+            android:layout_width="48dp"
+            android:paddingRight="20dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/del_pic"
+            android:top="28dp" />
+
+        <TextView
+            android:id="@+id/create_account_btn"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:textStyle="bold"
+
+            android:textColor="@color/color_ff3b30"
+            android:text="@string/CREATEACCOUNT"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="135dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/bg_white_dian"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+        <!--<com.yum.two_yum.utile.AutoEndEditText2-->
+            <!--android:id="@+id/email_et"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:textSize="17dp"-->
+            <!--android:layout_marginBottom="2dp"-->
+            <!--android:background="@color/white"-->
+            <!--android:textColorHint="@color/color_c7c7cc"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginLeft="18dp"-->
+            <!--android:digits="1234567890.@qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"-->
+            <!--android:textColor="@color/color_484848"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:hint="@string/EMAIL" />-->
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_margin="2dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.yum.two_yum.utile.ContainsEmojiEditText
+            android:layout_weight="1"
+            android:id="@+id/email_et"
+            android:paddingLeft="18dp"
+            android:textSize="17dp"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:maxLength="225"
+            android:textColorHint="@color/color_c7c7cc"
+            android:paddingRight="18dp"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingEnd="30dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:digits="1234567890.@qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:layout_marginRight="1dp"
+            android:background="@color/white"
+            android:layout_toLeftOf="@+id/del_btn1"
+            android:hint="@string/EMAIL" />
+
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/del_btn1"
+                android:layout_alignParentRight="true"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/edit_clear" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_d1d1d1" />
+        <!--<com.yum.two_yum.utile.AutoEndEditText2-->
+            <!--android:id="@+id/password_et"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+
+            <!--android:textSize="17dp"-->
+            <!--android:maxLength="20"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:maxLines="1"-->
+            <!--android:background="@color/white"-->
+            <!--android:textColorHint="@color/color_c7c7cc"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginLeft="18dp"-->
+            <!--android:digits="1234567890.@qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"-->
+            <!--android:textColor="@color/color_484848"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:hint="@string/PASSWORDS820CHARACTERS" />-->
+        <RelativeLayout
+            android:padding="2dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.yum.two_yum.utile.ContainsEmojiEditText
+            android:layout_weight="1"
+            android:id="@+id/password_et"
+            android:paddingRight="18dp"
+            android:paddingLeft="18dp"
+            android:maxLength="20"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textSize="17dp"
+            android:layout_toLeftOf="@+id/del_btn2"
+            android:paddingEnd="30dp"
+            android:hint="@string/PASSWORDS820CHARACTERS"
+            android:textColor="@color/color_484848"
+            android:textColorHint="@color/color_c7c7cc"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/white" />
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/del_btn2"
+                android:layout_alignParentRight="true"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/edit_clear" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_btn"
+        android:background="@drawable/button_red"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/LOGIN"
+        android:textSize="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:id="@+id/forgot_password"
+        android:textSize="14dp"
+        android:textColor="@color/color_FF007AFF"
+        android:layout_marginTop="20dp"
+        android:text="@string/FORGOTPASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

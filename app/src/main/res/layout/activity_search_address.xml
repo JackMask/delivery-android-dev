@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/del_btn"
+            android:layout_width="44dp"
+            android:paddingRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_height="28dp"
+            android:src="@mipmap/del_pic"
+            android:top="28dp" />
+
+        <RelativeLayout
+            android:id="@+id/search_btn"
+            android:layout_width="254dp"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:background="@drawable/search_for_grad_layout"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="17dp">
+            <ImageView
+                android:id="@+id/search_img"
+                android:src="@mipmap/search_grad"
+                android:layout_width="28dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="28dp" />
+            <com.yum.two_yum.utile.ContainsEmojiEditText
+                android:id="@+id/search_et"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:maxLength="225"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/search_img"
+                android:layout_toLeftOf="@id/empty_btn"
+                android:gravity="center_vertical"
+                android:hint="@string/YOURDELIVERYADDRESS"
+                android:textColorHint="@color/color_FFC7C7CC"
+                android:textColor="@color/color_484848"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_FFEBEBEB"
+                />
+            <ImageView
+                android:id="@+id/empty_btn"
+                android:visibility="gone"
+                android:src="@mipmap/empty"
+                android:layout_width="28dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="28dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/color_FFd7d7d7"/>
+    <com.yum.two_yum.utile.pulltorefresh.PullToRefreshListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/address_lv"
+        android:divider="@color/color_FFd7d7d7"
+        android:dividerHeight="2px"
+        />
+
+</LinearLayout>

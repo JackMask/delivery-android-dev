@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/whitesmoke"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/main_bottom">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="57dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_D7D7D7"/>
+
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+
+        android:orientation="horizontal"
+        android:visibility="visible"
+       >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/merchants_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:onClick="btnhome">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/show_merchants"
+                    android:visibility="visible"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/orders_show" />
+                <ImageView
+                    android:id="@+id/hide_merchants"
+                    android:visibility="gone"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/orders"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+                    <View
+                        android:visibility="visible"
+                        android:id="@+id/point_tv"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/area_bg_red_point" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/orders_tv"
+                android:layout_marginTop="3dp"
+                android:textSize="12dp"
+                android:textColor="@color/color_FFFF3B30"
+                android:text="@string/ORDERS"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/remind_btn"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:onClick="btnhome">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/show_remind"
+                    android:visibility="gone"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/menu_show" />
+
+                <ImageView
+                    android:id="@+id/hide_remind"
+                    android:visibility="visible"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/menu" />
+            </LinearLayout>
+        <TextView
+            android:id="@+id/favorites_tv"
+            android:layout_marginTop="3dp"
+            android:textSize="12dp"
+            android:textColor="@color/color_FF484848"
+            android:text="@string/MENU"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/message_btn"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:onClick="btnhome">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/show_message"
+                    android:visibility="gone"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/statistics_show" />
+
+                <ImageView
+                    android:id="@+id/hide_message"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/statistics" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/nearby_tv"
+                android:layout_marginTop="3dp"
+                android:textSize="12dp"
+                android:textColor="@color/color_484848"
+                android:text="@string/STATS"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:onClick="btnhome">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/show_my"
+                    android:visibility="gone"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/my_show" />
+
+                <ImageView
+                    android:id="@+id/hide_my"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/my" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/me_tv"
+                android:layout_marginTop="3dp"
+                android:textSize="12dp"
+                android:textColor="@color/color_FF484848"
+                android:text="@string/ME"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:visibility="gone"
+        android:id="@+id/no_data_layout"
+        android:layout_weight="1"
+        android:background="#6e000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/select_layout"
+        android:visibility="gone"
+        android:layout_weight="1.2"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="162dp">
+        <TextView
+            android:textColor="@color/color_484848"
+            android:textSize="15dp"
+            android:background="@color/color_f4f4f4"
+            android:gravity="center"
+            android:text="2y@2yum.app"
+            android:layout_width="match_parent"
+            android:layout_height="31dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/call_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:textColor="@color/color_007AFF"
+                android:text="@string/SENDEMAIL"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:text="@string/CANCEL"
+                android:textStyle="bold"
+                android:textColor="@color/color_007AFF"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:visibility="gone"
+        android:id="@+id/no_data_layout2"
+        android:layout_weight="1"
+        android:background="#6e000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/phone_layout"
+        android:visibility="gone"
+        android:layout_weight="1.2"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/phone_tv"
+            android:textColor="@color/color_484848"
+            android:textSize="15dp"
+            android:background="@color/color_f4f4f4"
+            android:gravity="center"
+            android:text="2y@2yum.app"
+            android:layout_width="match_parent"
+            android:layout_height="31dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/call_phone_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:textColor="@color/color_007AFF"
+                android:text="@string/CALLPHONE"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/sms_phone_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:textColor="@color/color_007AFF"
+                android:text="@string/MESSAGE"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/cancel_btn1"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:text="@string/CANCEL"
+                android:textStyle="bold"
+                android:textColor="@color/color_007AFF"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:visibility="gone"
+        android:id="@+id/no_data_layout1"
+        android:layout_weight="1"
+        android:background="#6e000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/cancel_layout"
+        android:visibility="gone"
+        android:layout_weight="1.2"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/color_484848"
+            android:textSize="15dp"
+            android:background="@color/color_f4f4f4"
+            android:gravity="center"
+            android:text="@string/PLEASESELECTAREASONFORCANCELLING"
+            android:layout_width="match_parent"
+            android:layout_height="31dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/sold_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:textColor="@color/color_007AFF"
+                android:text="@string/SOLDOUT"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/wrong_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:textColor="@color/color_007AFF"
+                android:text="@string/WRONGORDER"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+            android:id="@+id/customer_btn"
+            android:layout_weight="1"
+            android:padding="18dp"
+            android:textSize="20dp"
+            android:textColor="@color/color_007AFF"
+            android:text="@string/CUSTOMERREQUESTCANCELLATION"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+            android:id="@+id/address_btn"
+            android:layout_weight="1"
+            android:padding="18dp"
+            android:textSize="20dp"
+            android:textColor="@color/color_007AFF"
+            android:text="@string/WRONGADDRESS"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+            android:id="@+id/cannot_btn"
+            android:layout_weight="1"
+            android:padding="18dp"
+            android:textSize="20dp"
+            android:textColor="@color/color_007AFF"
+            android:text="@string/CANNOTCONTACT"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/cancel_cancel_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:text="@string/CANCEL"
+                android:textStyle="bold"
+                android:textColor="@color/color_007AFF"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:visibility="gone"
+        android:id="@+id/no_data_layout3"
+        android:layout_weight="1"
+        android:background="#6e000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/ok_layout"
+        android:visibility="gone"
+        android:layout_weight="1.2"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ok_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:textColor="@color/color_007AFF"
+                android:text="@string/YES"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/cancel_btn2"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:text="@string/CANCEL"
+                android:textStyle="bold"
+                android:textColor="@color/color_007AFF"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

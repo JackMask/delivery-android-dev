@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="48dp"
+            android:paddingRight="20dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/left_arrow"
+            android:top="28dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="4dp"
+        android:textSize="36dp"
+        android:text="@string/TERMSOFSERVICE"
+        android:textStyle="bold"
+        android:paddingLeft="24dp"
+        android:textColor="@color/color_484848"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:textSize="15dp"
+            android:textColor="@color/color_484848"
+            android:text="请注意：本《服务条款》…….请仔细阅读本条款，因为它包含了关于您的法定权利和义务等重要信息。。。。
+
+最后更新：3月15日 2018年"
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+</LinearLayout>

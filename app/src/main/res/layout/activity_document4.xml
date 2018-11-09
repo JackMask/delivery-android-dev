@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+
+            android:id="@+id/del_btn"
+            android:layout_width="48dp"
+            android:paddingRight="20dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/left_arrow"
+            android:top="28dp" />
+        <TextView
+            android:id="@+id/save_out_btn"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:textColor="@color/color_484848"
+            android:text="@string/SAVELOGOUT"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/title_layout"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="42dp"
+                android:textSize="30dp"
+                android:visibility="visible"
+                android:text="@string/MAILINGADDRESS"
+                android:textStyle="bold"
+                android:textColor="@color/color_484848"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="28dp"
+                android:textSize="16dp"
+                android:text="@string/COUNTRYREGION"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/country_btn"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:visibility="visible"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:id="@+id/country_ed"
+                    android:textSize="24dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_484848"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/right_arrow_gray"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_ebebeb"/>
+            <TextView
+                android:layout_marginTop="28dp"
+                android:textSize="16dp"
+                android:text="@string/STREETADDRESS"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/select_address_btn"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:visibility="visible"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:id="@+id/street_ed"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:textSize="24dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_484848"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/edit_point"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_ebebeb"/>
+            <TextView
+                android:layout_marginTop="28dp"
+                android:textSize="16dp"
+                android:text="@string/APTSUITEOPTIONAL"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:visibility="visible"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:id="@+id/apt_ed"
+                    android:textSize="24dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_484848"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:background="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/edit_point"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_ebebeb"/>
+            <TextView
+                android:layout_marginTop="28dp"
+                android:textSize="16dp"
+                android:text="@string/CITY"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:visibility="visible"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:id="@+id/city_ed"
+                    android:textSize="24dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_484848"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/edit_point"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_ebebeb"/>
+            <TextView
+                android:layout_marginTop="28dp"
+                android:textSize="16dp"
+                android:text="@string/STATEPROVINCE"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:visibility="visible"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:id="@+id/state_ed"
+                    android:textSize="24dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_484848"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/edit_point"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_ebebeb"/>
+            <TextView
+                android:layout_marginTop="28dp"
+                android:textSize="16dp"
+                android:text="@string/ZIP"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:visibility="visible"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:id="@+id/zip_ed"
+                    android:textSize="24dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_484848"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/edit_point"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="82dp"
+                android:background="@color/color_ebebeb"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/save_btn"
+        android:background="@drawable/button_red"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/NEXT"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="118dp"
+        android:layout_height="58dp" />
+</RelativeLayout>

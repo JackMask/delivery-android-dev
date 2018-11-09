@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_ebebeb"
+    android:layout_height="match_parent">
+    <com.yum.two_yum.utile.pulltorefresh.PullToRefreshListView
+        android:id="@+id/content_lv"
+        android:layout_width="match_parent"
+        android:dividerHeight="0px"
+        android:divider="@color/white"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

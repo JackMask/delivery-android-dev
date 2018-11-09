@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="64dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_height="63dp">
+        <TextView
+            android:id="@+id/dish_name"
+            android:textSize="16dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_FF484848"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/dish_price"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textColor="@color/color_FF484848"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/less_btn"
+                    android:src="@mipmap/ring_less"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+                <TextView
+                    android:id="@+id/num_tv"
+                    android:layout_toRightOf="@+id/less_btn"
+                    android:layout_toLeftOf="@+id/plus_btn"
+                    android:layout_centerVertical="true"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/color_FF484848"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/plus_btn"
+                    android:src="@mipmap/ring_plus"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

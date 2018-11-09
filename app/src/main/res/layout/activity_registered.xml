@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/del_btn"
+            android:layout_width="48dp"
+            android:paddingRight="20dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/back_img"
+            android:top="28dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/head_btn"
+        android:layout_marginTop="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.yum.two_yum.utile.CircleImageView
+        android:id="@+id/hospital_head_img"
+        android:src="@mipmap/head_img"
+        android:layout_width="81dp"
+        android:layout_height="81dp" />
+        <TextView
+            android:id="@+id/prompt_tv"
+            android:text="@string/PROFILE1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:textSize="13dp"
+            android:textColor="#C7C7C7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/bg_white_dian"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_margin="2dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.yum.two_yum.utile.ContainsEmojiEditText
+            android:id="@+id/email_et"
+            android:textSize="17dp"
+            android:singleLine="true"
+            android:focusable="true"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="18dp"
+            android:maxLength="225"
+            android:digits="1234567890.@qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:textColorHint="@color/color_c7c7cc"
+            android:paddingEnd="30dp"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@+id/del_btn1"
+            android:background="@color/white"
+            android:hint="@string/EMAIL" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/del_btn1"
+                android:layout_alignParentRight="true"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/edit_clear" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_d1d1d1" />
+        <RelativeLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+        <com.yum.two_yum.utile.ContainsEmojiEditText
+            android:id="@+id/password_et"
+            android:maxLength="20"
+            android:textSize="17dp"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:hint="@string/PASSWORDS820CHARACTERS"
+            android:textColor="@color/color_484848"
+            android:textColorHint="@color/color_c7c7cc"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:singleLine="true"
+            android:paddingEnd="30dp"
+            android:layout_toLeftOf="@+id/del_btn2"
+            android:paddingLeft="18dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/white" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/del_btn2"
+                android:layout_alignParentRight="true"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/edit_clear" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/registered_btn"
+        android:background="@drawable/button_red"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/CREATEACCOUNT"
+        android:textSize="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:textSize="13dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColorLink="@drawable/tv_selector"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/color_FF007AFF"
+        android:layout_marginTop="29dp"
+        android:text="@string/FORGOTPASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

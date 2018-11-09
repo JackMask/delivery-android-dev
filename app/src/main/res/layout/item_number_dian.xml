@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="8dp"
+        android:layout_height="55dp">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/track3"
+            android:scaleType="fitXY"
+            android:id="@+id/line"
+            android:layout_width="2dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/track_one"
+            android:src="@mipmap/track1"
+            android:layout_width="8dp"
+            android:layout_height="8dp" />
+        <ImageView
+            android:id="@+id/track_two"
+            android:src="@mipmap/track1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="8dp"
+            android:layout_height="8dp" />
+    </RelativeLayout>
+
+</LinearLayout>

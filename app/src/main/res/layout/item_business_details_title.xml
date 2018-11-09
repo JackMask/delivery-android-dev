@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/title_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/mAbSlidingPlayView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+
+                app:rollviewpager_play_delay="3000"/>
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/back_white"
+                android:layout_width="48dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:layout_height="38dp" />
+            <ImageView
+                android:id="@+id/collection_btn"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="26dp"
+                android:layout_toLeftOf="@id/more_btn"
+                android:src="@mipmap/heart_white_small"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <ImageView
+                android:id="@+id/more_btn"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="19dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/more_white"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="18dp">
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:ellipsize="end"
+                android:lines="3"
+                android:textColor="@color/color_FF484848"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/keyword_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="费城三明治"
+                        android:textColor="@color/color_FF484848"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <com.yum.two_yum.utile.CircleImageView
+                    android:id="@+id/hospital_head_img"
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:src="@mipmap/head_img" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/color_FFd7d7d7" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

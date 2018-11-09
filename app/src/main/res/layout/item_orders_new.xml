@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/color_ebebeb"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+                <com.yum.two_yum.utile.CircleImageView
+                    android:id="@+id/head_img"
+                    android:src="@mipmap/one"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/sex_tv"
+                    android:text="女士"
+                    android:textColor="@color/color_FF767676"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/numbering_tv"
+                        android:textSize="18dp"
+                        android:text="#001"
+                        android:textColor="@color/color_484848"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/time_tv"
+                        android:textSize="16dp"
+                        android:text="19:40~20:00"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/color_484848"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_toLeftOf="@+id/distance_tv"
+                        android:layout_width="10dp"
+                        android:src="@mipmap/distance"
+                        android:layout_marginRight="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="13dp" />
+                    <TextView
+                        android:id="@+id/distance_tv"
+                        android:textSize="12dp"
+                        android:text="4.9英里"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/color_484848"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/order_num_tv"
+                        android:textSize="11dp"
+                        android:singleLine="true"
+                        android:text="订单号：1234567890E089"
+                        android:textColor="@color/color_FF767676"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/order_time_tv"
+                        android:textSize="11dp"
+                        android:gravity="right"
+                        android:text="03/18/2018 19:28"
+                        android:textColor="@color/color_FF767676"
+                        android:layout_weight="1.8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:textColor="@color/color_484848"
+                        android:text="Angelina Jolie"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:id="@+id/phone_btn"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@mipmap/phone"
+                            android:layout_width="15dp"
+
+                            android:layout_marginRight="10dp"
+                            android:layout_height="15dp" />
+                        <TextView
+                            android:id="@+id/phone_num"
+                            android:textColor="@color/color_FF007AFF"
+                            android:text="6264305876"
+                            android:textSize="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address_btn"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="24dp"
+            android:singleLine="true"
+            android:layout_marginRight="20dp"
+            android:text="1830 Aumford Ave, Los Angeles, CA 91730"
+            android:textColor="@color/color_FF007AFF"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/note_tv"
+            android:layout_marginTop="12dp"
+            android:text="P.S. 特斯拉公司前台"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/color_484848"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <com.yum.two_yum.utile.view.NoSlideListView
+            android:id="@+id/content_lv"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="@string/DELIVERYCOST"
+                android:textColor="@color/color_484848"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/delivery_tv"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:text="$1.00"
+                android:textColor="@color/color_484848"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="@string/TAX"
+                android:textColor="@color/color_484848"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tax_tv"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:text="$1.00"
+                android:textColor="@color/color_484848"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:text="@string/TOTAL"
+                android:textColor="@color/color_484848"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/all_pice_tv"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:text="$1.00"
+                android:textColor="@color/color_484848"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/btn_layout"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:background="@drawable/area_bg_red_orders_btn"
+                android:textColor="@color/color_ff3b30"
+                android:textSize="18dp"
+                android:text="@string/CANCEL"
+                android:gravity="center"
+                android:layout_width="102dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/ok_btn"
+                android:background="@drawable/button_red_bright"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/ORDERSNOW"
+                android:gravity="center"
+                android:layout_width="128dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+            android:id="@+id/ps_tv"
+        android:visibility="gone"
+        android:textSize="12dp"
+        android:gravity="right|center"
+        android:paddingTop="2dp"
+        android:paddingRight="5dp"
+        android:text="*地址不正确"
+        android:textColor="@color/color_FF767676"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ebebeb"/>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/sound_btn"
+            android:layout_width="28dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_height="28dp"
+            android:src="@mipmap/sound_on"
+            android:top="28dp" />
+
+        <TextView
+            android:textSize="15dp"
+            android:text="@string/ORDERTODAY"
+            android:textColor="@color/color_484848"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.yum.two_yum.utile.view.SwitchView
+            android:id="@+id/v_switch_1"
+            android:layout_width="53dp"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            app:isOpened="false"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_DBDBDB"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layou"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        app:tabIndicatorColor="@color/color_ff3b30"
+        app:tabIndicatorHeight="5dp"
+        app:tabTextAppearance="@style/TabText"
+        app:tabTextColor="@android:color/black"
+        app:tabSelectedTextColor="@android:color/black"
+        android:layout_height="50dp" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:background="@color/color_ebebeb"
+        android:layout_below="@id/tab_layou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

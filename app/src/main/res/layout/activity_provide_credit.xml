@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/del_btn"
+            android:layout_width="48dp"
+            android:paddingRight="20dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/del_pic"
+            android:top="28dp" />
+
+        <TextView
+            android:id="@+id/save_btn"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:textColor="@color/color_DBDBDB"
+            android:text="@string/SAVE"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/color_484848"
+            android:text="@string/CARDHOLDERSNAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.yum.two_yum.utile.ContainsEmojiEditText
+            android:id="@+id/card_name"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="18dp"
+            android:maxLength="225"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textColor="@color/color_484848"
+            android:background="@drawable/bg_white_dian"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/color_484848"
+            android:text="@string/CARDNUMBER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.yum.two_yum.utile.ContainsEmojiEditText
+            android:id="@+id/card_num"
+            android:singleLine="true"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:maxLength="225"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:inputType="number"
+            android:textColor="@color/color_484848"
+            android:background="@drawable/bg_white_dian"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/color_484848"
+            android:text="@string/EXPIRATIONDATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:paddingTop="13dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="11dp"
+            android:background="@drawable/bg_white_dian"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.yum.two_yum.utile.ContainsEmojiEditText
+                android:id="@+id/mm_et"
+                android:background="@color/white"
+                android:textSize="18dp"
+                android:hint="MM"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:gravity="right"
+                android:layout_marginRight="11dp"
+                android:textColor="@color/color_484848"
+                android:textColorHint="@color/color_c7c7cc"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/color_484848"
+                android:text="/"
+                android:textSize="18dp"
+                android:layout_marginRight="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.yum.two_yum.utile.ContainsEmojiEditText
+                android:id="@+id/yy_et"
+                android:background="@color/white"
+                android:textSize="18dp"
+                android:hint="YY"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:layout_marginRight="11dp"
+                android:textColor="@color/color_484848"
+                android:textColorHint="@color/color_c7c7cc"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/color_484848"
+            android:text="@string/CVV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.yum.two_yum.utile.ContainsEmojiEditText
+            android:id="@+id/card_cvv"
+            android:textSize="18dp"
+            android:textColor="@color/color_484848"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:maxLength="225"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:inputType="number"
+            android:singleLine="true"
+            android:background="@drawable/bg_white_dian"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+</LinearLayout>

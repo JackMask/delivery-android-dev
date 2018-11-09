@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+
+            android:id="@+id/del_btn"
+            android:layout_width="48dp"
+            android:paddingRight="20dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/left_arrow"
+            android:top="28dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/title_layout"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/color_484848"
+            android:text="@string/IDPHOTO"
+            android:layout_marginTop="18dp"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/cert_iv"
+            android:background="@drawable/bg_grad"
+            android:scaleType="fitXY"
+
+            android:src="@mipmap/pic_square"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+        <RadioButton
+            android:layout_marginTop="28dp"
+        android:id="@+id/check_button"
+        style="@style/package_radio_style"
+        android:text="我保证所有信息都是真实且正确的。"
+        android:textSize="12dp"
+        android:textColor="@color/color_FF767676"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/save_btn"
+        android:background="@drawable/button_red"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/NEXT"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="118dp"
+        android:layout_height="58dp" />
+
+</RelativeLayout>

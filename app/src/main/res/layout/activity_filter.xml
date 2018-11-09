@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/del_btn"
+            android:layout_width="48dp"
+            android:paddingRight="20dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/del_pic"
+            android:top="28dp" />
+
+        <TextView
+            android:id="@+id/reset_btn"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:textColor="@color/color_484848"
+            android:text="@string/RESET"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/title_layout"
+        android:background="@color/color_FFd7d7d7"/>
+
+    <com.yum.two_yum.utile.arrogantlistview.widget.IndexableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0px"
+        android:divider="@color/white"
+        android:layout_above="@+id/line1_layout"
+        android:layout_below="@+id/line_layout"
+        android:id="@+id/listview" />
+    <View
+        android:layout_above="@+id/btn_layout"
+        android:id="@+id/line1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_FFd7d7d7"/>
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="81dp">
+        <TextView
+            android:id="@+id/ok_btn"
+            android:background="@drawable/button_red_bright"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/VIEWSCREENINGRESULTS"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

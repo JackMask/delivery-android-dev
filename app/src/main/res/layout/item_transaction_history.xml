@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingRight="24dp"
+    android:paddingLeft="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/color_484848"
+        android:textSize="30dp"
+        android:text="3/18/2017"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/PAYOUT"
+            android:textColor="@color/color_484848"
+            android:textSize="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pice_tv"
+            android:layout_alignParentRight="true"
+            android:text="$873.99"
+            android:textColor="@color/color_484848"
+            android:textSize="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/account_tv"
+        android:textColor="@color/color_484848"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:text="***2183"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_ebebeb"/>
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/SERVICE"
+            android:textColor="@color/color_484848"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/service_tv"
+            android:layout_alignParentRight="true"
+            android:text="-150.99"
+            android:textColor="@color/color_484848"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/refund_layout"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/COMPLAINTRETURN"
+            android:textColor="@color/color_484848"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/return_tv"
+            android:layout_alignParentRight="true"
+            android:text="-50.99"
+            android:textColor="@color/color_484848"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/adjustment_layout"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/ADJUSTMENTPROMPT"
+            android:textColor="@color/color_484848"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/adjustment_tv"
+            android:layout_alignParentRight="true"
+            android:text="-50.99"
+            android:textColor="@color/color_484848"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_ebebeb"/>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:paddingTop="30dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="157dp">
+        <ImageView
+            android:id="@+id/dishes_img"
+            android:src="@mipmap/one"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerCrop"
+            android:layout_width="156dp"
+            android:layout_height="127dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/name_tv"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginBottom="3dp"
+                android:text="火腿三明治咖啡牛肉"
+                android:textColor="@color/color_FF484848"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/content_tv"
+                android:lines="4"
+                android:ellipsize="end"
+                android:textSize="13dp"
+                android:text="Weread can be toasted or not, bacon crispy or limp, lettuce iceberg or other…"
+                android:textColor="@color/color_FF484848"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/pice_tv"
+                    android:layout_weight="1.3"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="16dp"
+                    android:text="$ 13.99"
+
+                    android:textColor="@color/color_FF484848"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+
+                    android:visibility="visible"
+                    android:id="@+id/btns_layout"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/less_btn"
+                        android:src="@mipmap/ring_less"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <TextView
+                        android:id="@+id/num_tv"
+                        android:layout_toRightOf="@+id/less_btn"
+                        android:layout_toLeftOf="@+id/plus_btn"
+                        android:layout_centerVertical="true"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/color_FF484848"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/plus_btn"
+                        android:src="@mipmap/ring_plus"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/sold_out_tv"
+                    android:gravity="right"
+                    android:visibility="gone"
+                    android:textSize="14sp"
+                    android:textColor="@color/actionsheet_red"
+                    android:text="@string/SOLDOUT"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/view_null"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/white"/>
+
+</LinearLayout>

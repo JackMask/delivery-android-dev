@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:paddingTop="20dp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/del_btn"
+            android:layout_width="48dp"
+            android:paddingRight="20dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/left_arrow"
+            android:top="28dp" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/title_layout"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="18dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/NAMEANDMAINDISH"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/BUSINESSNAME"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.yum.two_yum.utile.ContainsEmojiEditText
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/name_ed"
+                android:textSize="20dp"
+                android:maxLength="225"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:hint="@string/EGYANGKITCHEN"
+                android:textColorHint="@color/color_DBDBDB"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/edit_point1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="28dp"
+            android:textSize="16dp"
+            android:text="@string/MAINDISH30CHARACTERS"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.yum.two_yum.utile.ContainsEmojiEditText
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/main_dish_ed"
+                android:textSize="20dp"
+                android:maxLength="225"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:hint="@string/EGBURGERPIZZA"
+                android:textColorHint="@color/color_DBDBDB"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/edit_point1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/GEOGRAPHICLOCATION"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/COUNTRYREGION"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/county_btn"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/county_ed"
+                android:textSize="20dp"
+                android:text="@string/UNITEDSTATES"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/STREETADDRESS"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:id="@+id/street_btn"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/street_ed"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:maxLength="225"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/APTSUITEOPTIONAL"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <com.yum.two_yum.utile.ContainsEmojiEditText
+                android:id="@+id/apt_ed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:maxLength="225"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:paddingBottom="18dp"
+                android:paddingTop="18dp"
+                android:textColor="@color/color_484848"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/edit_point1" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/CITY"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/city_ed"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_FFC7C7CC"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/STATEPROVINCE"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/province_ed"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_FFC7C7CC"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/ZIP1"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/zip_ed"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_FFC7C7CC"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/KEYWORDS"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/CANONLYCHOOSETWO"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/keyword_btn"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/keyword_ed"
+                android:textSize="20dp"
+                android:hint="@string/EGCHINESEDUMPLINGS"
+                android:textColorHint="@color/color_DBDBDB"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/BUSINESSHOURS"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/OPENMANUALEVERYDAY"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/open_btn"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/open_ed"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="28dp"
+            android:textSize="16dp"
+            android:text="@string/CLOSEAUTOEVERYDAY"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/closed_btn"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/close_ed"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/MINIMUMDELIVERY"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/SHIPPINGNOTINCLUDED"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:id="@+id/amount_btn"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/amount_ed"
+                android:textSize="20dp"
+                android:text="$ 6.99"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/DELIVERYCOST"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="27dp"
+            android:visibility="visible"
+            android:id="@+id/delivery_btn"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/delivery_ed"
+                android:textSize="20dp"
+                android:text="$ 1.00"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/TAXRATE"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="27dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.yum.two_yum.utile.ContainsEmojiEditText
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/taxrate_ed"
+                android:textSize="20dp"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:hint="@string/EGOR"
+                android:inputType="number|numberDecimal"
+                android:textColorHint="@color/color_c7c7cc"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/edit_point1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/DELIVERYAREARANGE"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/RADIUSISLESSTHANOREQUALTOMILE"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/select_area_btn"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:id="@+id/distance_ed"
+                android:textSize="20dp"
+                android:text="5.0"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/DELIVERYORTIME"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:textSize="16dp"
+            android:text="@string/DATE"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:textSize="20dp"
+                android:text="@string/TODAY"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="28dp"
+            android:textSize="16dp"
+            android:text="@string/TIME"
+            android:textColor="@color/color_484848"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/time_btn"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/time_tv"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/MAPS"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/map_btn"
+            android:orientation="horizontal"
+            android:layout_marginTop="27dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/map_tv"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:textSize="20dp"
+                android:text="@string/GOOGLEMAPS"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_ebebeb"/>
+        <TextView
+            android:layout_marginTop="42dp"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:text="@string/CURRENCY"
+            android:textStyle="bold"
+            android:textColor="@color/color_484848"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="27dp"
+            android:visibility="visible"
+            android:id="@+id/currency_btn"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/flag_iv"
+                android:layout_marginRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/currency_tv"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_484848"
+                android:layout_weight="1"
+                android:maxLength="18"
+                android:background="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/right_arrow_gray1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="90dp"
+            android:background="@color/color_ebebeb"/>
+    </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/save_btn"
+        android:background="@drawable/button_red"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/SAVE"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="118dp"
+        android:layout_height="58dp" />
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/no_log_in_layout" />
+    <com.yum.two_yum.utile.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/collection_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingBottom="20dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="68dp"
+                android:textSize="36dp"
+                android:text="@string/FAVORITES"
+                android:textStyle="bold"
+                android:paddingLeft="24dp"
+                android:textColor="@color/color_484848"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.yum.two_yum.utile.view.NoSlideListView
+                android:id="@+id/collection_lv"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </com.yum.two_yum.utile.pulltorefresh.PullToRefreshScrollView>
+
+
+</LinearLayout>

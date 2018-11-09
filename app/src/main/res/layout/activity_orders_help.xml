@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/del_btn"
+            android:layout_width="48dp"
+            android:paddingRight="20dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/left_arrow"
+            android:top="28dp" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/title_layout"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="38dp"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/file_img"
+                android:layout_marginRight="11dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:text="@string/CANCELORDER"
+                android:textColor="@color/color_484848"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/color_484848"
+            android:text="@string/ORDERSINPRODUCTIONCANNOTBECANCELED"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        <View
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_DBDBDB"/>
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/file_img"
+                android:layout_marginRight="11dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:text="@string/WRONGORDER"
+                android:textColor="@color/color_484848"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/color_484848"
+            android:text="@string/PLEASECONTACTMERCHANTIMMEDIATELY"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        <View
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_DBDBDB"/>
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/file_img"
+                android:layout_marginRight="11dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:text="@string/ANYOTHERPROBLEM"
+                android:textColor="@color/color_484848"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/color_484848"
+            android:text="@string/PLEASECONTACTTHEMERCHANTIMMEDIATELYORINFORM2YUM"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        <View
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_DBDBDB"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:id="@+id/mail_btn"
+            android:layout_weight="1"
+            android:background="@drawable/area_bg_gray_help_btn"
+            android:layout_marginRight="17.5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/mail1"
+                android:layout_width="28dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:textColor="@color/color_484848"
+                android:textSize="18dp"
+                android:text="2Yum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/phone_btn"
+            android:layout_weight="1"
+            android:layout_marginLeft="17.5dp"
+            android:background="@drawable/area_bg_gray_help_btn"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/phone"
+                android:layout_width="18dp"
+                android:layout_marginBottom="8dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:textColor="@color/color_484848"
+                android:textSize="18dp"
+                android:text="@string/MERCHANT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View
+        android:visibility="gone"
+        android:id="@+id/no_data_layout"
+        android:layout_weight="1"
+        android:background="#6e000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/select_layout"
+        android:visibility="gone"
+        android:layout_weight="1.2"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        <TextView
+            android:id="@+id/phone_tv"
+            android:textColor="@color/color_484848"
+            android:textSize="15dp"
+            android:background="@color/color_f4f4f4"
+            android:gravity="center"
+            android:text="@string/TODAY"
+            android:layout_width="match_parent"
+            android:layout_height="31dp" />
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/call_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:textColor="@color/color_007AFF"
+                android:text="@string/CALLPHONE"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/message_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:textColor="@color/color_007AFF"
+                android:text="@string/MESSAGE"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:text="@string/CANCEL"
+                android:textStyle="bold"
+                android:textColor="@color/color_007AFF"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/select_email_layout"
+        android:visibility="gone"
+        android:layout_weight="1.2"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="162dp">
+        <TextView
+            android:textColor="@color/color_484848"
+            android:textSize="15dp"
+            android:background="@color/color_f4f4f4"
+            android:gravity="center"
+            android:text="2y@2yum.app"
+            android:layout_width="match_parent"
+            android:layout_height="31dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/email_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:textColor="@color/color_007AFF"
+                android:text="@string/SENDEMAIL"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/dialog_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <TextView
+                android:id="@+id/email_cancel_btn"
+                android:layout_weight="1"
+                android:padding="18dp"
+                android:textSize="20dp"
+                android:text="@string/CANCEL"
+                android:textStyle="bold"
+                android:textColor="@color/color_007AFF"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
